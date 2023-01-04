@@ -1,0 +1,12 @@
+<body>
+  <h1>Workouts</h1>
+  <ul>
+    <% workouts.forEach(workouts => { %>
+      <li>
+				<%= workouts.text %> 
+				- 
+				<%= workouts.done ? 'done' : 'not done' %>
+			</li>
+    <% }) %>
+  </ul>
+</body>
